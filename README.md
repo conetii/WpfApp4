@@ -9,10 +9,13 @@
 Фишкой проекта является радар близости. Метод `UpdateHeat` преобразует расстояние до загаданного числа в значение `HeatValue`, текст подсказки и цвет. В интерфейсе это отображается через `ProgressBar`, поэтому видно, насколько близка текущая попытка. Новая партия запускается без перезапуска программы командой `RestartGameCommand`, которая вызывает `RestartGame` и сбрасывает состояние игры.
 
 ![Начало игры](report-images/lab04-start.jpg)
+
 Снимок 1: начальное состояние игры.
 
 ![Радар близости](report-images/lab04-radar.jpg)
+
 Снимок 2: неверная попытка, обновленный диапазон, история и индикатор близости.
 
 ![Код игры](report-images/lab04-code.jpg)
-Снимок 3: фрагменты `GameState.EvaluateGuess`, `GuessNumberViewModel.UpdateHeat` и `RestartGame`.
+
+Снимок 3: фрагменты `GameState.Evaluate` и `GuessNumberViewModel`.
